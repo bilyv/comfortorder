@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import heroImage from "@/assets/hero-guest.jpg";
-
 const HeroSection = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-background/95 to-warm/50" />
       
       <div className="container mx-auto px-4 relative z-10">
@@ -17,16 +15,12 @@ const HeroSection = () => {
             
             <div className="space-y-6">
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                <span className="text-foreground">Chaos is optional.</span>
+                <span className="text-foreground">Guests shouldn’t wait</span>
                 <br />
-                <span className="bg-gradient-primary bg-clip-text text-transparent">
-                  Let your guests tap — and relax.
-                </span>
+                <span className="bg-gradient-primary bg-clip-text text-transparent">ComfortOrder changes how hospitality runs</span>
               </h1>
               
-              <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl">
-                Staff stress, guest complaints, and lost revenue — solved in one scan.
-              </p>
+              <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl">Revolutionize your business with quickorder</p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -40,25 +34,19 @@ const HeroSection = () => {
             
             <div className="flex items-center gap-4 text-sm text-muted-foreground justify-center lg:justify-start">
               <span className="flex items-center gap-2">
-                ✓ <span>Instant setup</span>
+                ✓ 
               </span>
               <span className="flex items-center gap-2">
                 ✓ <span>No credit card</span>
               </span>
-              <span className="flex items-center gap-2">
-                ✓ <span>30-day trial</span>
-              </span>
+              
             </div>
           </div>
           
           {/* Visual */}
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-elegant animate-float">
-              <img 
-                src={heroImage} 
-                alt="Guest relaxing while using ComfortOrder"
-                className="w-full h-auto"
-              />
+              <img src={heroImage} alt="Guest relaxing while using ComfortOrder" className="w-full h-auto" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
             
@@ -73,8 +61,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
