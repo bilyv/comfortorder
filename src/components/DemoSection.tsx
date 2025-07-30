@@ -26,7 +26,19 @@ const DemoSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Demo Steps */}
           <div className="space-y-6">
-            {demoSteps.map((step, index) => {})}
+            {demoSteps.map((step, index) => (
+              <Card key={index} className="p-6 border-l-4 border-l-primary/30 hover:border-l-primary transition-colors">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                    <span className="text-primary font-bold text-lg">{step.step}</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-2">{step.title}</h3>
+                    <p className="text-muted-foreground">{step.description}</p>
+                  </div>
+                </div>
+              </Card>
+            ))}
           </div>
 
           {/* Visual Demo */}
