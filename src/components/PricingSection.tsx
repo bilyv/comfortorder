@@ -13,20 +13,20 @@ const PricingSection = () => {
     popular: false
   }, {
     name: "Pro",
-    price: "$29",
-    period: "per month",
+    price: "Custom Pricing",
+    period: "",
     description: "Best for most hospitality businesses",
     features: ["Unlimited requests", "Loyalty program included", "Custom themes & branding", "Priority support", "Analytics dashboard", "Staff management tools"],
-    cta: "Start Pro Trial",
+    cta: "Contact Us",
     variant: "hero" as const,
     popular: true
   }, {
     name: "Business",
-    price: "$79",
-    period: "per month",
+    price: "Custom Pricing",
+    period: "",
     description: "For multi-location operations",
     features: ["Everything in Pro", "Multi-location management", "Advanced staff analytics", "Custom integrations", "Dedicated success manager", "White-label options"],
-    cta: "Contact Sales",
+    cta: "Contact Us",
     variant: "warm" as const,
     popular: false
   }];
@@ -67,7 +67,7 @@ const PricingSection = () => {
                 <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
                 <div className="mb-4">
                   <span className="text-4xl font-bold">{plan.price}</span>
-                  <span className="text-muted-foreground">/{plan.period}</span>
+                  {plan.period && <span className="text-muted-foreground">/{plan.period}</span>}
                 </div>
                 <p className="text-muted-foreground">{plan.description}</p>
               </div>
