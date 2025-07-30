@@ -45,7 +45,7 @@ const PainSection = () => {
     with: "Multi-language support (e.g., Kinyarwanda, English) breaks barriers — making it easy for all guests to order confidently.",
     icon: "🌍"
   }];
-  return <section className="py-20 bg-background">
+  return <section id="pain" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">

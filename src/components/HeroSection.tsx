@@ -3,7 +3,11 @@ import { Badge } from "@/components/ui/badge";
 import heroImage from "@/assets/hero-guest.jpg";
 const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden mt-16">
-      <div className="absolute inset-0 bg-gradient-to-br from-background/95 to-warm/50" />
+      {/* Animated Grid Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background/95 to-warm/50">
+        <div className="absolute inset-0 bg-grid-pattern opacity-10 animate-pulse"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent animate-pulse-glow"></div>
+      </div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
