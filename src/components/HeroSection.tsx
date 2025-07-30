@@ -29,7 +29,7 @@ const HeroSection = () => {
             <div className="flex items-center gap-4 text-sm text-muted-foreground justify-center lg:justify-start">
               
               <span className="flex items-center gap-2">
-                ✓ <span>No credit card</span>
+                ✓ <span>Rwanda-based</span>
               </span>
               
             </div>
