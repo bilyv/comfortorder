@@ -9,9 +9,7 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="text-center lg:text-left space-y-8">
-            <Badge className="bg-primary/10 text-primary border-primary/20 px-4 py-2">
-              🎯 Psychology-Driven Hospitality Tech
-            </Badge>
+            
             
             <div className="space-y-6">
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
@@ -20,16 +18,12 @@ const HeroSection = () => {
                 <span className="bg-gradient-primary bg-clip-text text-transparent">ComfortOrder changes how hospitality runs</span>
               </h1>
               
-              <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl">Revolutionize your business with quickorder</p>
+              <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl">Revolutionize your business with quick ordering wit 0$ cost and fewer employees.</p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-6">
-                Try Live Demo
-              </Button>
-              <Button variant="warm" size="lg" className="text-lg px-8 py-6">
-                Start Free – No Setup Needed
-              </Button>
+              <Button variant="hero" size="lg" className="text-lg px-8 py-6">Start now</Button>
+              <Button variant="warm" size="lg" className="text-lg px-8 py-6">Contact us.</Button>
             </div>
             
             <div className="flex items-center gap-4 text-sm text-muted-foreground justify-center lg:justify-start">
@@ -55,9 +49,7 @@ const HeroSection = () => {
               ✨ Guest in Control
             </div>
             
-            <div className="absolute -bottom-4 -left-4 bg-card text-card-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-soft border">
-              📱 One Tap Solution
-            </div>
+            <div className="absolute -bottom-4 -left-4 bg-card text-card-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-soft border">📱 One click solution</div>
           </div>
         </div>
       </div>

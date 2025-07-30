@@ -53,9 +53,7 @@ const PainSection = () => {
         {/* Toggle Buttons */}
         <div className="flex justify-center mb-12">
           <div className="bg-muted p-2 rounded-lg inline-flex gap-2">
-            <Button variant={activeView === 'without' ? 'destructive' : 'ghost'} onClick={() => setActiveView('without')} className="px-6 py-3">
-              Current Reality
-            </Button>
+            <Button variant={activeView === 'without' ? 'destructive' : 'ghost'} onClick={() => setActiveView('without')} className="px-6 py-3">business without</Button>
             <Button variant={activeView === 'with' ? 'default' : 'ghost'} onClick={() => setActiveView('with')} className="px-6 py-3">With ComfortOrder</Button>
           </div>
         </div>
