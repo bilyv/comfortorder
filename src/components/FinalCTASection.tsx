@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-
 const FinalCTASection = () => {
-  return (
-    <section className="py-20 bg-background relative overflow-hidden">
+  return <section className="py-20 bg-background relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-warm/10" />
       
@@ -26,20 +24,10 @@ const FinalCTASection = () => {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button 
-                  variant="warm" 
-                  size="lg" 
-                  className="text-lg px-8 py-6 bg-white text-primary hover:bg-white/90 font-semibold"
-                >
+                <Button variant="warm" size="lg" className="text-lg px-8 py-6 bg-white text-primary hover:bg-white/90 font-semibold">
                   Start Now – It's Free to Try
                 </Button>
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="text-lg px-8 py-6 border-white/30 text-white hover:bg-white/10"
-                >
-                  Watch Real Guest Experience
-                </Button>
+                
               </div>
 
               {/* Urgency/Social Proof */}
@@ -77,8 +65,6 @@ const FinalCTASection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default FinalCTASection;

@@ -1,62 +1,36 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-
 const PricingSection = () => {
-  const plans = [
-    {
-      name: "Basic",
-      price: "$0",
-      period: "Forever",
-      description: "Perfect for trying ComfortOrder",
-      features: [
-        "QR ordering system",
-        "10 requests per month", 
-        "Basic notifications",
-        "Email support"
-      ],
-      cta: "Start Free",
-      variant: "outline" as const,
-      popular: false
-    },
-    {
-      name: "Pro", 
-      price: "$29",
-      period: "per month",
-      description: "Best for most hospitality businesses",
-      features: [
-        "Unlimited requests",
-        "Loyalty program included",
-        "Custom themes & branding",
-        "Priority support",
-        "Analytics dashboard",
-        "Staff management tools"
-      ],
-      cta: "Start Pro Trial",
-      variant: "hero" as const,
-      popular: true
-    },
-    {
-      name: "Business",
-      price: "$79", 
-      period: "per month",
-      description: "For multi-location operations",
-      features: [
-        "Everything in Pro",
-        "Multi-location management",
-        "Advanced staff analytics", 
-        "Custom integrations",
-        "Dedicated success manager",
-        "White-label options"
-      ],
-      cta: "Contact Sales",
-      variant: "warm" as const,
-      popular: false
-    }
-  ];
-
-  return (
-    <section className="py-20 bg-gradient-warm">
+  const plans = [{
+    name: "Basic",
+    price: "$0",
+    period: "Forever",
+    description: "Perfect for trying ComfortOrder",
+    features: ["QR ordering system", "10 requests per month", "Basic notifications", "Email support"],
+    cta: "Start Free",
+    variant: "outline" as const,
+    popular: false
+  }, {
+    name: "Pro",
+    price: "$29",
+    period: "per month",
+    description: "Best for most hospitality businesses",
+    features: ["Unlimited requests", "Loyalty program included", "Custom themes & branding", "Priority support", "Analytics dashboard", "Staff management tools"],
+    cta: "Start Pro Trial",
+    variant: "hero" as const,
+    popular: true
+  }, {
+    name: "Business",
+    price: "$79",
+    period: "per month",
+    description: "For multi-location operations",
+    features: ["Everything in Pro", "Multi-location management", "Advanced staff analytics", "Custom integrations", "Dedicated success manager", "White-label options"],
+    cta: "Contact Sales",
+    variant: "warm" as const,
+    popular: false
+  }];
+  return <section className="py-20 bg-gradient-warm bg-zinc-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
@@ -84,20 +58,10 @@ const PricingSection = () => {
 
         {/* Pricing Cards */}
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {plans.map((plan, index) => (
-            <Card 
-              key={index}
-              className={`relative p-8 text-center transition-all duration-300 hover:scale-105 ${
-                plan.popular 
-                  ? 'ring-2 ring-primary shadow-elegant bg-card' 
-                  : 'hover:shadow-warm'
-              }`}
-            >
-              {plan.popular && (
-                <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-4 py-1">
+          {plans.map((plan, index) => <Card key={index} className={`relative p-8 text-center transition-all duration-300 hover:scale-105 ${plan.popular ? 'ring-2 ring-primary shadow-elegant bg-card' : 'hover:shadow-warm'}`}>
+              {plan.popular && <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-4 py-1">
                   Most Popular
-                </Badge>
-              )}
+                </Badge>}
 
               <div className="mb-8">
                 <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
@@ -109,39 +73,24 @@ const PricingSection = () => {
               </div>
 
               <div className="space-y-4 mb-8">
-                {plan.features.map((feature, featureIndex) => (
-                  <div 
-                    key={featureIndex}
-                    className="flex items-center gap-3 text-left"
-                  >
+                {plan.features.map((feature, featureIndex) => <div key={featureIndex} className="flex items-center gap-3 text-left">
                     <span className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></span>
                     <span className="text-sm">{feature}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
 
-              <Button 
-                variant={plan.variant}
-                size="lg"
-                className="w-full text-lg py-6"
-              >
+              <Button variant={plan.variant} size="lg" className="w-full text-lg py-6">
                 {plan.cta}
               </Button>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
 
         {/* Money Back Guarantee */}
         <div className="text-center mt-12">
-          <div className="inline-flex items-center gap-2 bg-success/10 text-success px-6 py-3 rounded-full">
-            <span className="text-xl">🛡️</span>
-            <span className="font-semibold">30-day money-back guarantee</span>
-          </div>
+          
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default PricingSection;

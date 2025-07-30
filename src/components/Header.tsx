@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
 const Header = () => {
-  return (
-    <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+  return <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -17,7 +15,7 @@ const Header = () => {
           {/* Navigation Tabs */}
           <Tabs defaultValue="home" className="hidden md:block">
             <TabsList className="bg-muted/50">
-              <TabsTrigger value="home" className="data-[state=active]:bg-background">Home</TabsTrigger>
+              
               <TabsTrigger value="who-we-are" className="data-[state=active]:bg-background">Who We Are</TabsTrigger>
               <TabsTrigger value="what-we-provide" className="data-[state=active]:bg-background">What We Provide</TabsTrigger>
               <TabsTrigger value="contact" className="data-[state=active]:bg-background">Contact Us</TabsTrigger>
@@ -26,9 +24,7 @@ const Header = () => {
 
           {/* Action Buttons */}
           <div className="flex items-center gap-3">
-            <Button variant="outline" size="sm">
-              Contact Us
-            </Button>
+            
             <Button variant="hero" size="sm">
               Start Now
             </Button>
@@ -47,8 +43,6 @@ const Header = () => {
           </Tabs>
         </div>
       </div>
-    </header>
-  );
+    </header>;
 };
-
 export default Header;

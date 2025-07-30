@@ -18,7 +18,7 @@ const HeroSection = () => {
                 <span className="bg-gradient-primary bg-clip-text text-transparent">ComfortOrder changes how hospitality runs</span>
               </h1>
               
-              <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl">Revolutionize your business with quick ordering wit 0$ cost and fewer employees.</p>
+              <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-[10px] my-[10px]">Revolutionize your business with quick ordering with 0$ cost and fewer employees.</p>
             </div>
             
             <div className="flex flex-row gap-4 justify-center lg:justify-start">
@@ -27,9 +27,7 @@ const HeroSection = () => {
             </div>
             
             <div className="flex items-center gap-4 text-sm text-muted-foreground justify-center lg:justify-start">
-              <span className="flex items-center gap-2">
-                ✓ 
-              </span>
+              
               <span className="flex items-center gap-2">
                 ✓ <span>No credit card</span>
               </span>
