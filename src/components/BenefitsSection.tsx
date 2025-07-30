@@ -25,14 +25,14 @@ const BenefitsSection = () => {
       ]
     },
     {
-      icon: "🔁",
-      title: "Loyalty Program Built-In", 
-      description: "Keep customers returning without extra tools",
+      icon: "📊",
+      title: "Real-Time Analytics", 
+      description: "Track orders, preferences, and optimize your operations",
       details: [
-        "Automatic point tracking",
-        "Personalized rewards",
-        "Repeat visit incentives", 
-        "Customer data insights"
+        "Order tracking insights",
+        "Guest behavior patterns",
+        "Peak hour analysis", 
+        "Revenue optimization"
       ]
     }
   ];

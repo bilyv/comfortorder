@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import PainSection from "@/components/PainSection";
 import BenefitsSection from "@/components/BenefitsSection";
@@ -10,6 +11,7 @@ import FinalCTASection from "@/components/FinalCTASection";
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <Header />
       <HeroSection />
       <PainSection />
       <BenefitsSection />

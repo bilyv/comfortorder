@@ -14,33 +14,15 @@ const FinalCTASection = () => {
               {/* Headline */}
               <div>
                 <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-                  If it saves you 1 staff member…
+                  Ready to Transform Your
                   <br />
-                  <span className="text-primary-glow">it already paid for itself.</span>
+                  <span className="text-primary-glow">Hospitality Business?</span>
                 </h2>
                 <p className="text-xl opacity-90 max-w-2xl mx-auto">
-                  Stop losing money on inefficient operations. Start gaining control, guest satisfaction, and peace of mind.
+                  Join thousands of businesses already using ComfortOrder to improve guest satisfaction and reduce costs.
                 </p>
               </div>
 
-              {/* Value Props */}
-              <div className="grid md:grid-cols-3 gap-6 my-8">
-                <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
-                  <div className="text-3xl mb-2">💰</div>
-                  <div className="font-bold">$2,400/month</div>
-                  <div className="text-sm opacity-80">Average savings</div>
-                </div>
-                <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
-                  <div className="text-3xl mb-2">⚡</div>
-                  <div className="font-bold">5 minutes</div>
-                  <div className="text-sm opacity-80">To get started</div>
-                </div>
-                <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
-                  <div className="text-3xl mb-2">🛡️</div>
-                  <div className="font-bold">Zero risk</div>
-                  <div className="text-sm opacity-80">30-day guarantee</div>
-                </div>
-              </div>
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

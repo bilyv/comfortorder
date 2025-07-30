@@ -21,9 +21,9 @@ const HeroSection = () => {
               <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl">Revolutionize your business with quick ordering wit 0$ cost and fewer employees.</p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-6">Start now</Button>
-              <Button variant="warm" size="lg" className="text-lg px-8 py-6">Contact us.</Button>
+            <div className="flex flex-row gap-4 justify-center lg:justify-start">
+              <Button variant="hero" size="lg" className="text-lg px-8 py-6">Start Now</Button>
+              <Button variant="warm" size="lg" className="text-lg px-8 py-6">Contact Us</Button>
             </div>
             
             <div className="flex items-center gap-4 text-sm text-muted-foreground justify-center lg:justify-start">
