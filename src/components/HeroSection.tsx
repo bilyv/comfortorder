@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import heroImage from "@/assets/hero-guest.jpg";
 const HeroSection = () => {
-  return <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden mt-16">
       <div className="absolute inset-0 bg-gradient-to-br from-background/95 to-warm/50" />
       
       <div className="container mx-auto px-4 relative z-10">
