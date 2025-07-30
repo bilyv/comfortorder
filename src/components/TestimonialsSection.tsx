@@ -5,7 +5,7 @@ const TestimonialsSection = () => {
     {
       quote: "We've cut labor costs, guests are happier, and the team isn't exhausted. ComfortOrder makes us feel in control again.",
       author: "Sarah Chen",
-      role: "Restaurant Manager",
+      role: "Hospitality Manager",
       business: "Urban Bistro",
       metric: "30% reduction in labor costs"
     },
@@ -13,7 +13,7 @@ const TestimonialsSection = () => {
       quote: "I wish I had this during our busiest season — it paid for itself in days. Our staff can finally focus on what matters.",
       author: "Marcus Rivera", 
       role: "Owner",
-      business: "Rivera's Family Restaurant",
+      business: "Rivera's Family Hospitality",
       metric: "ROI in 5 days"
     },
     {
@@ -42,7 +42,7 @@ const TestimonialsSection = () => {
             feel in control again."
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Real stories from restaurant owners who transformed their operations
+            Real stories from hospitality owners who transformed their operations
           </p>
         </div>
 
@@ -89,7 +89,7 @@ const TestimonialsSection = () => {
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div className="space-y-2">
             <div className="text-2xl font-bold text-primary">500+</div>
-            <div className="text-sm text-muted-foreground">Restaurants served</div>
+            <div className="text-sm text-muted-foreground">Hospitality businesses served</div>
           </div>
           <div className="space-y-2">
             <div className="text-2xl font-bold text-primary">4.9/5</div>
@@ -108,7 +108,7 @@ const TestimonialsSection = () => {
         {/* Social Proof CTA */}
         <div className="text-center mt-12">
           <p className="text-muted-foreground mb-4">
-            Join hundreds of restaurants already using ComfortOrder
+            Join hundreds of hospitality businesses already using ComfortOrder
           </p>
           <div className="flex justify-center gap-2">
             {[...Array(5)].map((_, i) => (

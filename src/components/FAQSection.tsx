@@ -5,7 +5,7 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "Is it hard to set up?",
-      answer: "No. QR codes are auto-generated instantly. Orders work immediately. No technical setup, no training required. Your restaurant can be live in under 5 minutes."
+      answer: "No. QR codes are auto-generated instantly. Orders work immediately. No technical setup, no training required. Your hospitality business can be live in under 5 minutes."
     },
     {
       question: "Does it replace our staff?",
@@ -21,7 +21,7 @@ const FAQSection = () => {
     },
     {
       question: "What about internet connectivity issues?",
-      answer: "ComfortOrder works with standard restaurant WiFi. Orders queue automatically if connection is temporarily lost. 99.9% uptime guarantee with redundant systems."
+      answer: "ComfortOrder works with standard hospitality WiFi. Orders queue automatically if connection is temporarily lost. 99.9% uptime guarantee with redundant systems."
     },
     {
       question: "Can we customize it for our brand?",
@@ -29,7 +29,7 @@ const FAQSection = () => {
     },
     {
       question: "How much money will we actually save?",
-      answer: "Most restaurants save $2,000-4,000 monthly in labor costs. Faster table turns increase revenue. Fewer errors reduce waste. ROI typically achieved within the first week."
+      answer: "Most hospitality businesses save $2,000-4,000 monthly in labor costs. Faster table turns increase revenue. Fewer errors reduce waste. ROI typically achieved within the first week."
     },
     {
       question: "What kind of support do you provide?",

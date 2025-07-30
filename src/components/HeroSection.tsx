@@ -12,7 +12,7 @@ const HeroSection = () => {
           {/* Content */}
           <div className="text-center lg:text-left space-y-8">
             <Badge className="bg-primary/10 text-primary border-primary/20 px-4 py-2">
-              🎯 Psychology-Driven Restaurant Tech
+              🎯 Psychology-Driven Hospitality Tech
             </Badge>
             
             <div className="space-y-6">

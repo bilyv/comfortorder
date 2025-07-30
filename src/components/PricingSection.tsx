@@ -23,7 +23,7 @@ const PricingSection = () => {
       name: "Pro", 
       price: "$29",
       period: "per month",
-      description: "Best for most restaurants",
+      description: "Best for most hospitality businesses",
       features: [
         "Unlimited requests",
         "Loyalty program included",
@@ -76,7 +76,7 @@ const PricingSection = () => {
                 💡 Reality Check: You're already spending more on extra staff
               </h3>
               <p className="text-muted-foreground">
-                Average restaurant saves $2,400/month in labor costs with ComfortOrder
+                Average hospitality business saves $2,400/month in labor costs with ComfortOrder
               </p>
             </div>
           </Card>
@@ -131,27 +131,6 @@ const PricingSection = () => {
           ))}
         </div>
 
-        {/* Referral Section */}
-        <div className="mt-16 max-w-4xl mx-auto">
-          <Card className="p-8 bg-gradient-primary text-primary-foreground">
-            <div className="text-center">
-              <h3 className="text-2xl font-bold mb-4">
-                🎯 Referral Bonus: Get 50% Off Pro Plan
-              </h3>
-              <p className="text-lg mb-6 opacity-90">
-                Invite a friend, get 50% off Pro Plan for 3 months — or unlock Business Plan features FREE
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="warm" size="lg" className="text-lg px-8 py-6">
-                  Share Referral Link
-                </Button>
-                <Button variant="outline" size="lg" className="text-lg px-8 py-6 border-white/20 text-white hover:bg-white/10">
-                  Learn More
-                </Button>
-              </div>
-            </div>
-          </Card>
-        </div>
 
         {/* Money Back Guarantee */}
         <div className="text-center mt-12">

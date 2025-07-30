@@ -98,13 +98,13 @@ const PainSection = () => {
             <div className="rounded-2xl overflow-hidden shadow-elegant">
               <img 
                 src={beforeAfterImage}
-                alt="Restaurant before and after ComfortOrder"
+                alt="Hospitality business before and after ComfortOrder"
                 className="w-full h-auto"
               />
             </div>
             
             <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold">
-              Real Restaurant Impact
+              Real Hospitality Impact
             </div>
           </div>
         </div>

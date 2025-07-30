@@ -63,7 +63,7 @@ const FinalCTASection = () => {
               {/* Urgency/Social Proof */}
               <div className="pt-6 border-t border-white/20">
                 <p className="text-sm opacity-80 mb-3">
-                  Join 500+ restaurants already saving money with ComfortOrder
+                  Join 500+ hospitality businesses already saving money with ComfortOrder
                 </p>
                 <div className="flex items-center justify-center gap-4 text-sm">
                   <span className="flex items-center gap-2">
@@ -86,11 +86,11 @@ const FinalCTASection = () => {
               <div className="text-sm">🔒 Enterprise Security</div>
               <div className="text-sm">🏆 Industry Leader</div>
               <div className="text-sm">⭐ 4.9/5 Rating</div>
-              <div className="text-sm">🚀 500+ Restaurants</div>
+              <div className="text-sm">🚀 500+ Hospitality Businesses</div>
             </div>
             
             <p className="text-xs text-muted-foreground">
-              Trusted by restaurants worldwide • GDPR compliant • SOC 2 certified
+              Trusted by hospitality businesses worldwide • GDPR compliant • SOC 2 certified
             </p>
           </div>
         </div>

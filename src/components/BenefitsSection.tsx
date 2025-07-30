@@ -46,7 +46,7 @@ const BenefitsSection = () => {
             <span className="bg-gradient-primary bg-clip-text text-transparent"> actually needs</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Three core features that transform your restaurant operations
+            Three core features that transform your hospitality operations
           </p>
         </div>
 
