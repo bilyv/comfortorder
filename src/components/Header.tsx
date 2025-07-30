@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import ContactModal from "@/components/ContactModal";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -19,23 +20,20 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <Tabs defaultValue="home" className="hidden lg:block">
+          <Tabs defaultValue="who-we-are" className="hidden lg:block">
             <TabsList className="bg-muted/50">
-              <TabsTrigger value="home" className="data-[state=active]:bg-background">Home</TabsTrigger>
               <TabsTrigger value="who-we-are" className="data-[state=active]:bg-background">Who We Are</TabsTrigger>
               <TabsTrigger value="what-we-provide" className="data-[state=active]:bg-background">What We Provide</TabsTrigger>
-              <TabsTrigger value="contact" className="data-[state=active]:bg-background">Contact Us</TabsTrigger>
             </TabsList>
           </Tabs>
 
           {/* Desktop Action Buttons */}
           <div className="hidden lg:flex items-center gap-3">
-            <Button variant="outline" size="sm">
-              Contact Us
-            </Button>
-            <Button variant="hero" size="sm">
-              Start Now
-            </Button>
+            <ContactModal>
+              <Button variant="outline" size="sm">
+                Contact Us
+              </Button>
+            </ContactModal>
           </div>
 
           {/* Mobile Hamburger Menu */}
@@ -48,24 +46,17 @@ const Header = () => {
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <nav className="flex flex-col space-y-4 mt-8">
                 <Button variant="ghost" className="justify-start text-lg">
-                  Home
-                </Button>
-                <Button variant="ghost" className="justify-start text-lg">
                   Who We Are
                 </Button>
                 <Button variant="ghost" className="justify-start text-lg">
                   What We Provide
                 </Button>
-                <Button variant="ghost" className="justify-start text-lg">
-                  Contact Us
-                </Button>
                 <div className="flex flex-col gap-3 mt-8">
-                  <Button variant="outline" size="lg">
-                    Contact Us
-                  </Button>
-                  <Button variant="hero" size="lg">
-                    Start Now
-                  </Button>
+                  <ContactModal>
+                    <Button variant="outline" size="lg">
+                      Contact Us
+                    </Button>
+                  </ContactModal>
                 </div>
               </nav>
             </SheetContent>

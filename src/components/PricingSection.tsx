@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import ContactModal from "@/components/ContactModal";
 const PricingSection = () => {
   const plans = [{
     name: "Basic",
@@ -79,9 +80,19 @@ const PricingSection = () => {
                   </div>)}
               </div>
 
-              <Button variant={plan.variant} size="lg" className="w-full text-lg py-6">
-                {plan.cta}
-              </Button>
+              {plan.cta === "Contact Us" ? (
+                <ContactModal title={`Get Started with ${plan.name}`}>
+                  <Button variant={plan.variant} size="lg" className="w-full text-lg py-6">
+                    {plan.cta}
+                  </Button>
+                </ContactModal>
+              ) : (
+                <ContactModal title="Start Your Free Trial">
+                  <Button variant={plan.variant} size="lg" className="w-full text-lg py-6">
+                    {plan.cta}
+                  </Button>
+                </ContactModal>
+              )}
             </Card>)}
         </div>
 
