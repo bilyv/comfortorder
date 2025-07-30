@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { GlowCard } from "@/components/ui/spotlight-card";
 import beforeAfterImage from "@/assets/before-after.jpg";
 const PainSection = () => {
   const [activeView, setActiveView] = useState<'without' | 'with'>('without');
@@ -73,19 +74,31 @@ const PainSection = () => {
                 </div>
                 
                 <div className="space-y-4">
-                  <div className={`p-4 rounded-lg transition-all duration-300 ${activeView === 'without' ? 'bg-destructive/10 border border-destructive/20 ring-2 ring-destructive/30' : 'bg-muted/50 opacity-50'}`}>
-                    <div className="flex items-start gap-2 mb-2">
-                      <span className="text-destructive font-semibold text-sm">WITHOUT:</span>
+                  <GlowCard 
+                    customSize={true} 
+                    glowColor="red" 
+                    className={`w-full h-auto transition-all duration-300 ${activeView === 'without' ? 'ring-2 ring-destructive/30' : 'opacity-50'}`}
+                  >
+                    <div className="p-4 rounded-lg bg-destructive/10 border border-destructive/20">
+                      <div className="flex items-start gap-2 mb-2">
+                        <span className="text-destructive font-semibold text-sm">WITHOUT:</span>
+                      </div>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{point.without}</p>
                     </div>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{point.without}</p>
-                  </div>
+                  </GlowCard>
                   
-                  <div className={`p-4 rounded-lg transition-all duration-300 ${activeView === 'with' ? 'bg-success/10 border border-success/20 ring-2 ring-success/30' : 'bg-muted/50 opacity-50'}`}>
-                    <div className="flex items-start gap-2 mb-2">
-                      <span className="text-success font-semibold text-sm">WITH:</span>
+                  <GlowCard 
+                    customSize={true} 
+                    glowColor="green" 
+                    className={`w-full h-auto transition-all duration-300 ${activeView === 'with' ? 'ring-2 ring-success/30' : 'opacity-50'}`}
+                  >
+                    <div className="p-4 rounded-lg bg-success/10 border border-success/20">
+                      <div className="flex items-start gap-2 mb-2">
+                        <span className="text-success font-semibold text-sm">WITH:</span>
+                      </div>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{point.with}</p>
                     </div>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{point.with}</p>
-                  </div>
+                  </GlowCard>
                 </div>
               </Card>)}
           </div>
